@@ -1,0 +1,24 @@
+header{
+    background-color: red;
+    height: 92px;
+    padding-left: 21px;
+    padding-top: 8px;
+    box-sizing: border-box;
+}
+header > h1{
+    font-family: 'Righteous', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    letter-spacing: -0.012em;
+    margin-top: 5px;
+    color: #ffffff;
+}
+header > h2{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 2px;
+    color: #ffffff;
+}
