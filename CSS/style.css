@@ -1,9 +1,19 @@
+body{
+    background: #e5e5e5;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+}
 header{
     background-color: red;
     height: 92px;
+    width: 100%;
     padding-left: 21px;
     padding-top: 8px;
     box-sizing: border-box;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+    position: fixed;
+    top: 0;
+
 }
 header > h1{
     font-family: 'Righteous', cursive;
@@ -15,10 +25,88 @@ header > h1{
     color: #ffffff;
 }
 header > h2{
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 18px;
     margin-top: 2px;
+    color: #ffffff;
+}
+main{
+    margin-left: 19px;
+    margin-top: 123px;
+}
+section{
+    margin-bottom: 108px;
+}
+section > p{
+    font-family: 'Righteous', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    letter-spacing: 0.018em;
+    margin-bottom: 13px;
+    margin-top: 27px;
+}
+section > div{
+    display: flex;
+    overflow-x: scroll;
+}
+
+section > div > div{
+    background: #ffffff;
+    height: 216px;
+    width: 172px;
+    padding: 18px 14px;
+    box-sizing: border-box;
+    border-radius: 9px;
+    box-shadow: 0 0 10px -4px rgba(0, 0, 0, .25);
+    margin-right: 16px;
+}
+
+section > div > div > p:nth-of-type(1){
+    font-weight: 700;
+    font-size: 16px;
+    color: #333333;
+    margin-top: 8px;
+    margin-bottom: 9px;
+}
+
+section > div > div > p:nth-of-type(2){
+    font-weight: 300;
+    font-size: 15px;
+    color: #a6a6a6;
+    margin-bottom: 15px;
+}
+
+section > div > div > p:nth-of-type(3){
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+.barra-inferior{
+    position: fixed;
+    bottom: 0;
+    height: 92px;
+    width: 100%;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.barra-inferior > div{
+    height: 61px;
+    width: 88%;
+    background: #cbcbcb;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.barra-inferior > div > div{
+}
+.barra-inferior > div > div > p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
     color: #ffffff;
 }
