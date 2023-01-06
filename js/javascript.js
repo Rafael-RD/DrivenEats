@@ -43,7 +43,7 @@ function finalizar(){
     const precoTotal = (Number(precoPrato)+Number(precoBebida)+Number(precoSobremesa)).toFixed(2).toString(10).replace('.',',');
     document.querySelector('.final-total p:last-of-type').innerHTML=`R$ ${precoTotal}`;
 
-    const msg = `https://api.whatsapp.com/send?phone=5547999779295&text=${encodeURIComponent(`Olá, gostaria de fazer o pedido: `)}%0A
+    const msg = `https://api.whatsapp.com/send?phone=5511999999999&text=${encodeURIComponent(`Olá, gostaria de fazer o pedido: `)}%0A
 ${encodeURIComponent(`- Prato: ${nomePrato}`)}%0A${encodeURIComponent(`- Bebida: ${nomeBebida}`)}%0A${encodeURIComponent(`- Sobremesa: ${nomeSobremesa}`)}%0A
 ${encodeURIComponent(`Total: R$ ${precoTotal}`)}%0A%0A${encodeURIComponent(`Nome: ${nome}`)}%0A${encodeURIComponent(`Endereço: ${endereco}`)}`;
     document.querySelector('.overlay div a').setAttribute('href', msg);
