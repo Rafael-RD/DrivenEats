@@ -7,7 +7,7 @@
     <title>DrivenEats</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/style.css">
 </head>
@@ -114,11 +114,34 @@
         </section>
     </main>
     <div class="barra-inferior">
-        <button class="botao" disabled>
+        <button class="botao" disabled onclick="finalizar()">
             <div>
                 <p>Selecione os 3 itens para fechar o pedido</p>
             </div>
         </button>
+    </div>
+    <div class="overlay hidden">
+        <div>
+            <p>Confirme seu pedido</p>
+            <div class="final-prato">
+                <p>Prato</p>
+                <p>R$</p>
+            </div>
+            <div class="final-bebida">
+                <p>Bebida</p>
+                <p>R$</p>
+            </div>
+            <div class="final-sobremesa">
+                <p>Sobremesa</p>
+                <p>R$</p>
+            </div>
+            <div class="final-total">
+                <p>Total</p>
+                <p>R$</p>
+            </div>
+            <a><button>Tudo certo, confirmar!</button></a>
+            <button onclick="cancelarPedido()">Cancelar</button>
+        </div>
     </div>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

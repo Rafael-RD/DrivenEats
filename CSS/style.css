@@ -123,6 +123,79 @@ section > div > div > ion-icon{
     color: #ffffff;
     width: 210px;
 }
+.overlay{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background:rgba(255, 255, 255, 0.66);
+    backdrop-filter: blur(6px);
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overlay > div{
+    width: 90%;
+    max-width: 425px;
+    height: auto;
+    background: #50D074;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 9px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, .25);
+}
+.overlay > div > p{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.overlay > div > div{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+.overlay > div > div > p{
+    font-weight: 300;
+    font-size: 22px;
+    color: #ffffff;
+    margin: 10px 0;
+}
+.overlay > div > div:last-of-type > p{
+    font-weight: 500;
+}
+.overlay > div > a{
+    width: 80%;
+    height: 50px;
+    margin-top: 18px;
+    cursor: default;
+}
+.overlay > div > a > button{
+    border: none;
+    border-radius: 100px;
+    color: #50D074;
+    width: 100%;
+    height: 100%;
+    font-size: 22px;
+    font-weight: 600;
+}
+.overlay > div > button{
+    border: none;
+    background: none;
+    width: 80%;
+    height: 50px;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 5px 0;
+}
+
 .selecionado{
     box-shadow: #32B72F 0px 1px 4px, #32B72F 0px 0px 0px 3px;
 }
