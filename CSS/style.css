@@ -13,7 +13,8 @@ header{
     box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
     position: fixed;
     top: 0;
-
+    z-index: 1;
+    
 }
 header > h1{
     font-family: 'Righteous', cursive;
@@ -32,7 +33,7 @@ header > h2{
 }
 main{
     margin-left: 19px;
-    margin-top: 123px;
+    margin-top: 110px;
 }
 section{
     margin-bottom: 108px;
@@ -43,12 +44,16 @@ section > p{
     font-weight: 400;
     font-size: 26px;
     letter-spacing: 0.018em;
-    margin-bottom: 13px;
-    margin-top: 27px;
+    margin-bottom: 10px;
+    margin-top: 17px;
 }
 section > div{
     display: flex;
     overflow-x: scroll;
+    overflow-y: none;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-left: 5px;
 }
 
 section > div > div{
@@ -60,6 +65,7 @@ section > div > div{
     border-radius: 9px;
     box-shadow: 0 0 10px -4px rgba(0, 0, 0, .25);
     margin-right: 16px;
+    position: relative;
 }
 
 section > div > div > p:nth-of-type(1){
@@ -82,6 +88,13 @@ section > div > div > p:nth-of-type(3){
     font-size: 16px;
     color: #000000;
 }
+section > div > div > ion-icon{
+    color: #32B72F;
+    position: absolute;
+    right: 10px;
+    bottom: 14px;
+    font-size: 16px;
+}
 .barra-inferior{
     position: fixed;
     bottom: 0;
@@ -92,7 +105,7 @@ section > div > div > p:nth-of-type(3){
     justify-content: center;
     align-items: center;
 }
-.barra-inferior > div{
+.botao{
     height: 61px;
     width: 88%;
     background: #cbcbcb;
@@ -100,13 +113,22 @@ section > div > div > p:nth-of-type(3){
     display: flex;
     justify-content: center;
     align-items: center;
+    border: none;
 }
-.barra-inferior > div > div{
-}
-.barra-inferior > div > div > p{
+.botao > div > p{
     font-weight: 400;
     font-size: 20px;
     line-height: 23px;
     text-align: center;
     color: #ffffff;
+    width: 210px;
+}
+.selecionado{
+    box-shadow: #32B72F 0px 1px 4px, #32B72F 0px 0px 0px 3px;
+}
+.hidden{
+    display: none;
+}
+.botao-liberado{
+    background-color: #32B72F;
 }

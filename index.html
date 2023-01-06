@@ -20,94 +20,108 @@
         <section>
             <p>Primeiro, seu prato</p>
             <div class="pratos">
-                <div>
+                <div onclick="selecionar('.pratos', this)">
                     <img src="img/frango_yin_yang.png" alt="Prato">
                     <p>Frango</p>
                     <p>metade uma coisa, metade outra</p>
                     <p>R$ 14,90</p>
+                    <ion-icon class="hidden" name="checkmark-circle"></ion-icon>
                 </div>
-                <div>
-                    <img src="img/frango_yin_yang.png" alt="Prato">
+                <div onclick="selecionar('.pratos', this)">
+                <img src="img/frango_yin_yang.png" alt="Prato">
                     <p>Carne</p>
                     <p>metade uma coisa, metade outra</p>
                     <p>R$ 20,90</p>
+                    <ion-icon class="hidden" name="checkmark-circle"></ion-icon>
                 </div>
-                <div>
+                <div onclick="selecionar('.pratos', this)">
                     <img src="img/frango_yin_yang.png" alt="Prato">
                     <p>Peixe</p>
                     <p>metade uma coisa, metade outra</p>
                     <p>R$ 18,40</p>
+                    <ion-icon class="hidden" name="checkmark-circle"></ion-icon>
                 </div>
-                <div>
+                <div onclick="selecionar('.pratos', this)">
                     <img src="img/frango_yin_yang.png" alt="Prato">
                     <p>Salada</p>
                     <p>metade uma coisa, metade outra</p>
                     <p>R$ 11,24</p>
+                    <ion-icon class="hidden" name="checkmark-circle"></ion-icon>
                 </div>
             </div>
             <p>Agora, sua bebida</p>
             <div class="bebidas">
-                <div>
+                <div onclick="selecionar('.bebidas', this)">
                     <img src="img/coca-cola.png" alt="Bebida">
                     <p>Coca</p>
                     <p>metade uma coisa, metade outra</p>
                     <p>R$ 4,90</p>
+                    <ion-icon class="hidden" name="checkmark-circle"></ion-icon>
                 </div>
-                <div>
+                <div onclick="selecionar('.bebidas', this)">
                     <img src="img/coca-cola.png" alt="Bebida">
                     <p>Guarana</p>
                     <p>metade uma coisa, metade outra</p>
                     <p>R$ 7,91</p>
+                    <ion-icon class="hidden" name="checkmark-circle"></ion-icon>
                 </div>
-                <div>
+                <div onclick="selecionar('.bebidas', this)">
                     <img src="img/coca-cola.png" alt="Bebida">
                     <p>Laranja</p>
                     <p>metade uma coisa, metade outra</p>
                     <p>R$ 5,29</p>
+                    <ion-icon class="hidden" name="checkmark-circle"></ion-icon>
                 </div>
-                <div>
+                <div onclick="selecionar('.bebidas', this)">
                     <img src="img/coca-cola.png" alt="Bebida">
                     <p>Rabo de galo</p>
                     <p>metade uma coisa, metade outra</p>
                     <p>R$ 10,99</p>
+                    <ion-icon class="hidden" name="checkmark-circle"></ion-icon>
                 </div>
             </div>
             <p>Por fim, sua sobremesa</p>
             <div class="sobremesas">
-                <div>
+                <div onclick="selecionar('.sobremesas', this)">
                     <img src="img/pudim.png" alt="Sobremesa">
                     <p>Pudim</p>
                     <p>metade uma coisa, metade outra</p>
                     <p>R$ 8,26</p>
+                    <ion-icon class="hidden" name="checkmark-circle"></ion-icon>
                 </div>
-                <div>
+                <div onclick="selecionar('.sobremesas', this)">
                     <img src="img/pudim.png" alt="Sobremesa">
                     <p>Brigadeiro</p>
                     <p>metade uma coisa, metade outra</p>
                     <p>R$ 7,36</p>
+                    <ion-icon class="hidden" name="checkmark-circle"></ion-icon>
                 </div>
-                <div>
+                <div onclick="selecionar('.sobremesas', this)">
                     <img src="img/pudim.png" alt="Sobremesa">
                     <p>Brownie</p>
                     <p>metade uma coisa, metade outra</p>
                     <p>R$ 18,40</p>
+                    <ion-icon class="hidden" name="checkmark-circle"></ion-icon>
                 </div>
-                <div>
+                <div onclick="selecionar('.sobremesas', this)">
                     <img src="img/pudim.png" alt="Sobremesa">
                     <p>Cookie</p>
                     <p>Metade uma coisa, metade outra</p>
                     <p>R$ 9,87</p>
+                    <ion-icon class="hidden" name="checkmark-circle"></ion-icon>
                 </div>
             </div>
         </section>
     </main>
     <div class="barra-inferior">
-        <div>
+        <button class="botao" disabled>
             <div>
-                <p>Selecione os 3 itens</p>
-                <p>para fechar o pedido</p>
+                <p>Selecione os 3 itens para fechar o pedido</p>
             </div>
-        </div>
+        </button>
     </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/javascript.js"></script>
 </body>
 </html>
